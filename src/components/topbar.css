@@ -1,0 +1,16 @@
+.topbar-right > ul li:not(:last-child){
+    margin-right: 30px;
+}
+.topbar-right > ul li{
+    position: relative;
+}
+.topbar-right > ul li:not(:last-child)::after{
+    content: "";
+    height: 10px;
+    width: 1px;
+    background: rgba(255,255,255,.3);
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: -15px;
+}
